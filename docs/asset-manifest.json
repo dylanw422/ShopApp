@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/shopapp/static/css/main.6bc3e324.css",
+    "main.js": "/shopapp/static/js/main.b9c90454.js",
+    "static/media/vinyl.png": "/shopapp/static/media/vinyl.851d2769ef6c67f7ea06.png",
+    "index.html": "/shopapp/index.html",
+    "main.6bc3e324.css.map": "/shopapp/static/css/main.6bc3e324.css.map",
+    "main.b9c90454.js.map": "/shopapp/static/js/main.b9c90454.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bc3e324.css",
+    "static/js/main.b9c90454.js"
+  ]
+}
