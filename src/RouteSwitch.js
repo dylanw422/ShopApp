@@ -6,7 +6,7 @@ function RouteSwitch() {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/shopapp" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
             </Routes>
         </BrowserRouter>
