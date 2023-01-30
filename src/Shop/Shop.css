@@ -1,0 +1,97 @@
+a {
+    display: flex;
+    align-items: center;
+}
+
+span > div {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(224, 224, 224);
+    margin-left: 5px;
+    font-size: 11px;
+    border-radius: 50%;
+    font-family: sans-serif;
+}
+
+#latest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#body {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#collection {
+    display: grid;
+    grid-template: 400px 400px 400px 400px 400px / 250px 250px 250px;
+    grid-gap: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.vinyl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.vinyl > img {
+    margin-bottom: 10px;
+    caret-color: transparent;
+}
+
+img:hover {
+    animation: grow 0.1s linear forwards
+}
+
+@keyframes grow {
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.vinyl > h3 {
+    margin-bottom: 10px;
+}
+
+.vinyl > h3,h4 {
+    background-color: transparent;
+    caret-color: transparent;
+}
+
+.vinyl > button {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.vinyl > button:hover {
+    animation: hover 0.4s forwards;
+    cursor: pointer;
+}
+
+@keyframes hover {
+    to {
+        background-color: rgb(1, 1, 22);
+        color: white
+    }
+}
+
+#nirvana:hover {
+    backdrop-filter: blur(50px);
+}

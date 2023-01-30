@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import './Home.css'
 import vinyl from './vinyl.png'
 
@@ -7,13 +7,15 @@ function Home() {
     <div>
       <header>
         <h1 id="name">Vinylly.</h1>
+        <a href="shopapp">HOME</a>
         <a href="shop">SHOP</a>
         <a href="about">ABOUT</a>
         <a href="checkout">CHECKOUT</a>
       </header>
-      <div id="body">
+      <div id="screen">
         <img alt='' src={vinyl}></img>
         <h1>EXPLORE THE SOUND</h1>
+        <h3>Listen to your favorite vinyl records unlike ever before</h3>
       </div>
     </div>
   );
