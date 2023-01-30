@@ -25,7 +25,7 @@ span > div {
 }
 
 #body {
-    height: 1000px;
+    height: 2500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -50,15 +50,40 @@ span > div {
 .vinyl > img {
     margin-bottom: 10px;
     caret-color: transparent;
+    position: relative;
+    display: flex;
+}
+
+.vinyl > div {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    bottom: 143px;
+    left: -6px;
 }
 
 img:hover {
-    animation: grow 0.1s linear forwards
+    animation: grow 0.1s linear forwards;
+}
+
+img:hover + div {
+    animation: play 15s linear forwards
 }
 
 @keyframes grow {
     to {
         transform: scale(1.05);
+    }
+}
+
+@keyframes play {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 262px;
     }
 }
 
@@ -92,6 +117,10 @@ img:hover {
     }
 }
 
-#nirvana:hover {
-    backdrop-filter: blur(50px);
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
 }
