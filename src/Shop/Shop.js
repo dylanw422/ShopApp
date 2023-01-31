@@ -53,12 +53,13 @@ let playPostSong = new Audio(postSong)
 let playBadSong = new Audio(badSong)
 let playEminemSong = new Audio(eminemSong)
 
-let total = 0
+let totalPrice = 0
 
 let curYear = new Date().getFullYear()
 
 function Shop() {
     let [items, setItems] = useState(0)
+    let cart = []
 
     //cart counter
     function addToCart() {
@@ -228,7 +229,7 @@ function Shop() {
                 <a href="checkout">CHECKOUT <span><div>{items}</div></span></a>
             </header>
             <div id="latest">
-                <h1>Latest Vinyls</h1>
+                <h1>Popular Vinyls</h1>
             </div>
             <div id="body">
                 <div id="collection">
@@ -238,7 +239,7 @@ function Shop() {
                         <h4>Smells Like Teen Spirit</h4>
                         <h3>Nirvana</h3>
                         <h5>$12.99</h5>
-                        <button onClick={() => {addToCart(); total+=12.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=12.99; cart.push('nirvana')}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayAstley(playAstley + 1)} onMouseLeave={() => setPlayAstley(playAstley + 1)} alt='' src={astley} style={{width: '250px'}}></img>
@@ -246,7 +247,7 @@ function Shop() {
                         <h4>Never Gonna Give You Up</h4>
                         <h3>Rick Astley</h3>
                         <h5>$9.99</h5>
-                        <button onClick={() => {addToCart(); total+=9.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=9.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayHotel(playHotel + 1)} onMouseLeave={() => setPlayHotel(playHotel + 1)} alt='' src={eagles} style={{width: '250px'}}></img>
@@ -254,7 +255,7 @@ function Shop() {
                         <h4>Hotel California</h4>
                         <h3>The Eagles</h3>
                         <h5>$14.99</h5>
-                        <button onClick={() => {addToCart(); total+=14.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=14.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayLights(playLights + 1)} onMouseLeave={() => setPlayLights(playLights + 1)} alt='' src={weeknd} style={{width: '250px'}}></img>
@@ -262,7 +263,7 @@ function Shop() {
                         <h4>Blinding Lights</h4>
                         <h3>The Weeknd</h3>
                         <h5>$10.99</h5>
-                        <button onClick={() => {addToCart(); total+=10.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=10.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayPeas(playPeas + 1)} onMouseLeave={() => setPlayPeas(playPeas + 1)} alt='' src={bep} style={{width: '250px'}}></img>
@@ -270,7 +271,7 @@ function Shop() {
                         <h4>The E.N.D</h4>
                         <h3>The Black Eyed Peas</h3>
                         <h5>$9.49</h5>
-                        <button onClick={() => {addToCart(); total+=9.49}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=9.49}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayPerfect(playPerfect + 1)} onMouseLeave={() => setPlayPerfect(playPerfect + 1)} alt='' src={divide} style={{width: '250px'}}></img>
@@ -278,7 +279,7 @@ function Shop() {
                         <h4>Divide</h4>
                         <h3>Ed Sheeran</h3>
                         <h5>$12.99</h5>
-                        <button onClick={() => {addToCart(); total+=12.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=12.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayNight(playNight + 1)} onMouseLeave={() => setPlayNight(playNight + 1)} alt='' src={maroon} style={{width: '250px'}}></img>
@@ -286,7 +287,7 @@ function Shop() {
                         <h4>Overexposed</h4>
                         <h3>Maroon 5</h3>
                         <h5>$13.49</h5>
-                        <button onClick={() => {addToCart(); total+=13.49}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=13.49}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayDeep(playDeep + 1)} onMouseLeave={() => setPlayDeep(playDeep + 1)} alt='' src={adele} style={{width: '250px'}}></img>
@@ -294,7 +295,7 @@ function Shop() {
                         <h4>21</h4>
                         <h3>Adele</h3>
                         <h5>$16.99</h5>
-                        <button onClick={() => {addToCart(); total+=16.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=16.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayRock(playRock + 1)} onMouseLeave={() => setPlayRock(playRock + 1)} alt='' src={nickelback} style={{width: '250px'}}></img>
@@ -302,7 +303,7 @@ function Shop() {
                         <h4>All The Right Reasons</h4>
                         <h3>Nickelback</h3>
                         <h5>$11.99</h5>
-                        <button onClick={() => {addToCart(); total+=11.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=11.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayHeart(playHeart + 1)} onMouseLeave={() => setPlayHeart(playHeart + 1)} alt='' src={kanye} style={{width: '250px'}}></img>
@@ -310,7 +311,7 @@ function Shop() {
                         <h4>808s & Heartbreak</h4>
                         <h3>Kanye West</h3>
                         <h5>$12.49</h5>
-                        <button onClick={() => {addToCart(); total+=12.49}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=12.49}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayDrake(playDrake + 1)} onMouseLeave={() => setPlayDrake(playDrake + 1)} alt='' src={drake} style={{width: '250px'}}></img>
@@ -318,7 +319,7 @@ function Shop() {
                         <h4>Take Care</h4>
                         <h3>Drake</h3>
                         <h5>$14.99</h5>
-                        <button onClick={() => {addToCart(); total+=14.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=14.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayGrenade(playGrenade + 1)} onMouseLeave={() => setPlayGrenade(playGrenade + 1)} alt='' src={bruno} style={{width: '250px'}}></img>
@@ -326,7 +327,7 @@ function Shop() {
                         <h4>Doo-Wops & Holligans</h4>
                         <h3>Bruno Mars</h3>
                         <h5>$13.29</h5>
-                        <button onClick={() => {addToCart(); total+=13.29}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=13.29}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayPost(playPost + 1)} onMouseLeave={() => setPlayPost(playPost + 1)} alt='' src={post} style={{width: '250px'}}></img>
@@ -334,7 +335,7 @@ function Shop() {
                         <h4>Stoney</h4>
                         <h3>Post Malone</h3>
                         <h5>$12.99</h5>
-                        <button onClick={() => {addToCart(); total+=12.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=12.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayBad(playBad + 1)} onMouseLeave={() => setPlayBad(playBad + 1)} alt='' src={mj} style={{width: '250px'}}></img>
@@ -342,7 +343,7 @@ function Shop() {
                         <h4>Bad</h4>
                         <h3>Michael Jackson</h3>
                         <h5>$13.99</h5>
-                        <button onClick={() => {addToCart(); total+=13.99}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=13.99}}>Add To Cart</button>
                     </div>
                     <div className='vinyl'>
                         <img onMouseEnter={() => setPlayEminem(playEminem + 1)} onMouseLeave={() => setPlayEminem(playEminem + 1)} alt='' src={eminem} style={{width: '250px'}}></img>
@@ -350,7 +351,7 @@ function Shop() {
                         <h4>The Eminem Show</h4>
                         <h3>Eminem</h3>
                         <h5>$15.29</h5>
-                        <button onClick={() => {addToCart(); total+=15.29}}>Add To Cart</button>
+                        <button onClick={() => {addToCart(); totalPrice+=15.29}}>Add To Cart</button>
                     </div>
                 </div>
             </div>

@@ -58,16 +58,16 @@ span > div {
     position: absolute;
     height: 0px;
     width: 0px;
-    border-bottom: 3px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
     bottom: 143px;
     left: -6px;
 }
 
-img:hover {
+.vinyl > img:hover {
     animation: grow 0.1s linear forwards;
 }
 
-img:hover + div {
+.vinyl > img:hover + div {
     animation: play 15s linear forwards
 }
 

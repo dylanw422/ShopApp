@@ -6,11 +6,11 @@ function Home() {
   return (
     <div>
       <header>
-        <h1 id="name">Vinylly.</h1>
-        <a href="shopapp">HOME</a>
-        <a href="shop">SHOP</a>
-        <a href="about">ABOUT</a>
-        <a href="checkout">CHECKOUT</a>
+          <h1 id="name">Vinylly.</h1>
+          <a href="shopapp">HOME</a>
+          <a href="shop">SHOP</a>
+          <a href="about">ABOUT</a>
+          <a href="checkout">CHECKOUT <span><div>0</div></span></a>
       </header>
       <div id="screen">
         <img alt='' src={vinyl}></img>
