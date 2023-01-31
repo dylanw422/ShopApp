@@ -2,7 +2,7 @@ import React from "react"
 import './Home.css'
 import vinyl from './vinyl.png'
 
-function Home() {
+function Home({cart}) {
   return (
     <div>
       <header>
@@ -10,7 +10,7 @@ function Home() {
           <a href="shopapp">HOME</a>
           <a href="shop">SHOP</a>
           <a href="about">ABOUT</a>
-          <a href="checkout">CHECKOUT <span><div>0</div></span></a>
+          <a href="checkout">CHECKOUT <span><div>{cart.length}</div></span></a>
       </header>
       <div id="screen">
         <img alt='' src={vinyl}></img>

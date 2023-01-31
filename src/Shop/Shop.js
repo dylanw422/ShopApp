@@ -3,11 +3,9 @@ import React, { useState, useEffect } from 'react'
 import './Shop.css'
 import songData from './songData.js'
 
-let totalPrice = 0
-
 let curYear = new Date().getFullYear()
 
-function Shop(cart, setCart) {
+function Shop({pushToCart, cart}) {
     let [items, setItems] = useState(cart.length)
 
     
@@ -32,8 +30,8 @@ function Shop(cart, setCart) {
                     {songData.map((song) => {
                         function addToCart() {
                             setItems(prevItems => prevItems + 1)
-                            setCart(cart.push(song.id))
-                            totalPrice = rndNum(totalPrice + song.price)
+                            cart.push(song.id)
+                            localStorage.setItem('cart', JSON.stringify(cart))
                             console.log(cart)
                         }
                         return (
