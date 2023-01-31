@@ -12,21 +12,21 @@ function Checkout() {
                 <a href="about">ABOUT</a>
                 <a href="checkout">CHECKOUT <span><div>0</div></span></a>
             </header>
-            <div id='title'>
-                <h1>Your Cart</h1>
-            </div>
-            <div id='cartArea'>
-                <div id='cart'>
-                    <div className='item'></div>
+            <div id="thisArea">
+                <div id="checkoutArea">
+                    <div id="cartWindow">
+
+                    </div>
+                    <div id="payment">
+                        <h3 id="subtotal">Subtotal</h3>
+                        <h3 id="taxes">Tax</h3>
+                        <h3 id="shipping">Shipping</h3>
+                        <h1 id="total">Total</h1>
+                        <div id="checkoutBtn">
+                            <button>Checkout</button>
+                        </div>  
+                    </div>
                 </div>
-            </div>
-            <div id='total'>
-                <div id='subtotal'>
-                    <h3>Subtotal: </h3>
-                </div>             
-            </div>
-            <div id='checkout'>
-                <button>Checkout</button>
             </div>
         </div>
     )
