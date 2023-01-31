@@ -34,8 +34,8 @@ function Checkout({cart, clearCart}) {
                             <div className="cartItem">
                                 <img alt='' src={songData[id].art}></img>
                                 <div className='songInfo'>
-                                    <h4>{songData[id].album}</h4>
-                                    <h4>{songData[id].artist}</h4>
+                                    <h5>{songData[id].album}</h5>
+                                    <h3>{songData[id].artist}</h3>
                                 </div>
                                 <h3>${songData[id].price}</h3>
                             </div>
@@ -43,10 +43,10 @@ function Checkout({cart, clearCart}) {
                     })}
                     </div>
                     <div id="payment">
-                        <h3 id="subtotal">Subtotal: ${rndNum(subtotal)}</h3>
-                        <h3 id="taxes">Tax: ${tax}</h3>
-                        <h3 id="shipping">Shipping: ${shipping}</h3>
-                        <h1 id="total">Total: ${total}</h1>
+                        <h3 id="subtotal">Subtotal: {rndNum(subtotal)} USD</h3>
+                        <h3 id="taxes">Tax: {tax} USD</h3>
+                        <h3 id="shipping">Shipping: {shipping} USD</h3>
+                        <h1 id="total">Total: {total} USD</h1>
                         <div id="checkoutBtn">
                             <button onClick={clearCart}>Checkout</button>
                         </div>  

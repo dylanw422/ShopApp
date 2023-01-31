@@ -30,6 +30,7 @@ import postSong from './songs/post.mp3'
 import badSong from './songs/bad.mp3'
 import eminemSong from './songs/eminem.mp3'
 
+
 const songData = [
     {
         id: 0,
@@ -37,7 +38,6 @@ const songData = [
         album: 'Smells Like Teen Spirit',
         price: 12.99,
         art: nirvana,
-        song: new Audio(nirvanaSong)
     },
     {
         id: 1,
