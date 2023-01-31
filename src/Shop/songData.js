@@ -14,22 +14,6 @@ import post from './vinyls/post.jpg'
 import mj from './vinyls/mj.png'
 import eminem from './vinyls/eminem.jpg'
 
-import nirvanaSong from './songs/nirvana.mp3';
-import astleySong from './songs/astley.mp3';
-import hotelSong from './songs/hotel.mp3'
-import lightsSong from './songs/lights.mp3'
-import peasSong from './songs/peas.mp3'
-import perfectSong from './songs/perfect.mp3'
-import nightSong from './songs/night.mp3'
-import deepSong from './songs/deep.mp3'
-import rockSong from './songs/rock.mp3'
-import heartSong from './songs/heart.mp3'
-import drakeSong from './songs/drake.mp3'
-import grenadeSong from './songs/grenade.mp3'
-import postSong from './songs/post.mp3'
-import badSong from './songs/bad.mp3'
-import eminemSong from './songs/eminem.mp3'
-
 
 const songData = [
     {
