@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home/Home.js";
 import Shop from "./Shop/Shop.js";
 import Checkout from "./Checkout/Checkout.js"
@@ -23,14 +23,14 @@ function RouteSwitch() {
     }
 
     return(
-        <HashRouter basename="/shopapp">
+        <BrowserRouter>
             <Routes>
                 <Route path="/shopapp" element={<Home cart={cart} />} />
                 <Route path="/shop" element={<Shop cart={cart} />} />
                 <Route path="/about" element={<About cart={cart}/>} />
                 <Route path="/checkout" element={<Checkout cart={cart} clearCart={clearCart} />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     )
 }
 
