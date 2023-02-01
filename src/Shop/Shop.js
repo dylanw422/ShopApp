@@ -5,13 +5,9 @@ import songData from './songData.js'
 
 let curYear = new Date().getFullYear()
 
-function Shop({pushToCart, cart}) {
+function Shop({ cart}) {
     let [items, setItems] = useState(cart.length)
-
-    
-    function rndNum(num) {
-        return Math.round((num + Number.EPSILON) * 100)/ 100;
-    }
+    let [play, setPlay] = useState(0)
 
     return (
         <div>
@@ -34,16 +30,27 @@ function Shop({pushToCart, cart}) {
                             localStorage.setItem('cart', JSON.stringify(cart))
                             console.log(cart)
                         }
+
+                        function playSong() {
+                            setPlay(prevPlay => prevPlay + 1)
+                            if (play % 2 === 0) {
+                                song.song.play()
+                            } else {
+                                song.song.pause()
+                                song.song.load()
+                            }
+                        }
+
                         return (
                             <div key={song.id} className="vinyl">
-                                <img alt='' src={song.art}></img>
+                                <img onMouseEnter={playSong} onMouseLeave={playSong} alt='' src={song.art}></img>
                                 <div></div>
                                 <div>
                                 </div>
                                 <h4>{song.album}</h4>
                                 <h3>{song.artist}</h3>
                                 <h5>${song.price}</h5>
-                                <button onClick={addToCart}>Add To Cart</button>
+                                <button id="atc" onClick={addToCart}>Add To Cart</button>
                             </div>
                         )
                     })}

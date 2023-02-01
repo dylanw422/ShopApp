@@ -1,0 +1,13 @@
+#aboutInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 300px 100px 300px
+}
+
+#aboutInfo > h3 {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.5em
+}

@@ -96,7 +96,7 @@ span > div {
     caret-color: transparent;
 }
 
-.vinyl > button {
+#atc {
     width: 100px;
     height: 30px;
     position: absolute;
@@ -105,7 +105,7 @@ span > div {
     border-radius: 3px;
 }
 
-.vinyl > button:hover {
+#atc:hover {
     animation: hover 0.3s forwards;
     cursor: pointer;
 }
