@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './Checkout.css'
 import songData from '../Shop/songData.js'
 
