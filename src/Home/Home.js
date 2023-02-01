@@ -13,7 +13,7 @@ function Home({cart}) {
           <a href="checkout">CHECKOUT <span><div>{cart.length}</div></span></a>
       </header>
       <div id="screen">
-        <img alt='' src={vinyl}></img>
+        <img id='record' alt='' src={vinyl}></img>
         <h1>EXPLORE THE SOUND</h1>
         <h3>Listen to your favorite vinyl records unlike ever before</h3>
       </div>

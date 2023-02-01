@@ -68,11 +68,11 @@ a:visited {
     height: 90vh;
 }
 
-#screen > img {
+#record {
     width: 800px;
     position: relative;
     z-index: 0;
-    animation: spinning 2s infinite linear;
+    animation: spin 2s infinite linear;
     background-color: transparent;
     caret-color: transparent;    
     user-select: none;
