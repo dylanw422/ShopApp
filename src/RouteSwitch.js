@@ -23,7 +23,7 @@ function RouteSwitch() {
     }
 
     return(
-        <HashRouter basename="/">
+        <HashRouter basename="/shopapp">
             <Routes>
                 <Route path="/shopapp" element={<Home cart={cart} />} />
                 <Route path="/shop" element={<Shop cart={cart} />} />
