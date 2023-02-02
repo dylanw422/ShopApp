@@ -13,7 +13,7 @@ function Shop({ cart}) {
         <div>
             <header>
                 <h1 id="name">Vinylly.</h1>
-                <a href="shopapp">HOME</a>
+                <a href="/">HOME</a>
                 <a href="shop">SHOP</a>
                 <a href="about">ABOUT</a>
                 <a href="checkout">CHECKOUT <span><div>{items}</div></span></a>
