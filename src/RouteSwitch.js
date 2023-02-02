@@ -23,7 +23,7 @@ function RouteSwitch() {
     }
 
     return(
-        <BrowserRouter basename='https://dylanw422.github.io/shopapp'>
+        <BrowserRouter basename='https://dylanw422.github.io/'>
             <Routes>
                 <Route path="/shopapp" element={<Home cart={cart} />} />
                 <Route path="/shop" element={<Shop cart={cart} />} />
