@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopapp/static/css/main.d96e426b.css",
-    "main.js": "/shopapp/static/js/main.0d2ddf4c.js",
+    "main.css": "/shopapp/static/css/main.5514907c.css",
+    "main.js": "/shopapp/static/js/main.c765541d.js",
     "static/media/vinyl.png": "/shopapp/static/media/vinyl.851d2769ef6c67f7ea06.png",
     "static/media/maroon.png": "/shopapp/static/media/maroon.f0a135014c76407b5e53.png",
     "static/media/peas.mp3": "/shopapp/static/media/peas.b918ee34a52806ba62ba.mp3",
@@ -34,11 +34,11 @@
     "static/media/RickAstley.jpg": "/shopapp/static/media/RickAstley.4d09b7c048da91ea8f1a.jpg",
     "static/media/post.jpg": "/shopapp/static/media/post.1f702760441b7e049f6b.jpg",
     "index.html": "/shopapp/index.html",
-    "main.d96e426b.css.map": "/shopapp/static/css/main.d96e426b.css.map",
-    "main.0d2ddf4c.js.map": "/shopapp/static/js/main.0d2ddf4c.js.map"
+    "main.5514907c.css.map": "/shopapp/static/css/main.5514907c.css.map",
+    "main.c765541d.js.map": "/shopapp/static/js/main.c765541d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d96e426b.css",
-    "static/js/main.0d2ddf4c.js"
+    "static/css/main.5514907c.css",
+    "static/js/main.c765541d.js"
   ]
 }
