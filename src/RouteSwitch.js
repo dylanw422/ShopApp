@@ -5,7 +5,7 @@ import Shop from "./Shop/Shop.js";
 import Checkout from "./Checkout/Checkout.js"
 import About from './About/About.js'
 
-function App() {
+function RouteSwitch() {
     const [cart, setCart] = useState(() => {
         const initialCart = localStorage.getItem('cart')
 
@@ -34,4 +34,4 @@ function App() {
     )
 }
 
-export default App;
+export default RouteSwitch;
