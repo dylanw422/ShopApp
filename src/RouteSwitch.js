@@ -25,7 +25,7 @@ function RouteSwitch() {
     return(
         <BrowserRouter basename='https://dylanw422.github.io/shopapp'>
             <Routes>
-                <Route path="/shopapp" element={<Home cart={cart} />} />
+                <Route path="/" element={<Home cart={cart} />} />
                 <Route path="/shop" element={<Shop cart={cart} />} />
                 <Route path="/about" element={<About cart={cart}/>} />
                 <Route path="/checkout" element={<Checkout cart={cart} clearCart={clearCart} />} />
