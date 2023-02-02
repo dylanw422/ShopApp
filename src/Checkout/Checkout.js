@@ -31,7 +31,7 @@ function Checkout({cart, clearCart}) {
                         tax = rndNum(subtotal*0.08)
                         total = rndNum(subtotal + tax + shipping)
                         return (
-                            <div className="cartItem">
+                            <div key={songData.id} className="cartItem">
                                 <img alt='' src={songData[id].art}></img>
                                 <div className='songInfo'>
                                     <h5>{songData[id].album}</h5>

@@ -42,7 +42,7 @@
 .cartItem {
     border-bottom: 1px solid black;
     display: grid;
-    grid-template: 100px / 100px 500px 150px;
+    grid-template: 100px / 100px 500px 200px;
     align-items: center;
     padding: 20px;
 }
