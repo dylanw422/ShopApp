@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home/Home.js";
+import Home from "./Home/App.js";
 import Shop from "./Shop/Shop.js";
 import Checkout from "./Checkout/Checkout.js"
 import About from './About/About.js'
