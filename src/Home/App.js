@@ -2,7 +2,7 @@ import React from "react"
 import './Home.css'
 import vinyl from './vinyl.png'
 
-function Home({cart}) {
+function App({cart}) {
   return (
     <div>
       <header>
@@ -21,4 +21,4 @@ function Home({cart}) {
   );
 }
 
-export default Home;
+export default App;
