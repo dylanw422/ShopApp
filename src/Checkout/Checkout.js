@@ -1,6 +1,7 @@
 import React from 'react'
 import './Checkout.css'
 import songData from '../Shop/songData.js'
+import bag from '../icons/bag.png'
 
 function Checkout({cart, clearCart}) {
 
@@ -17,11 +18,15 @@ function Checkout({cart, clearCart}) {
     return (
         <div>
             <header>
-                <h1 id="name">Vinylly.</h1>
+                <h1 onClick={() => window.location.href='/'} id="name">Vinylly.</h1>
                 <a href="/">HOME</a>
                 <a href="shop">SHOP</a>
                 <a href="about">ABOUT</a>
                 <a href="checkout">CHECKOUT <span><div>{cart.length}</div></span></a>
+                <div onClick={() => window.location.href='/shop'} id='bag'>
+                    <img alt='' src={bag}></img>
+                    <div>{cart.length}</div>
+                </div>
             </header>
             <div id="thisArea">
                 <div id="checkoutArea">

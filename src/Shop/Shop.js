@@ -2,21 +2,26 @@
 import React, { useState } from 'react'
 import './Shop.css'
 import songData from './songData.js'
+import bag from '../icons/bag.png'
 
 let curYear = new Date().getFullYear()
 
-function Shop({ cart}) {
+function Shop({cart}) {
     let [items, setItems] = useState(cart.length)
     let [play, setPlay] = useState(0)
 
     return (
         <div>
             <header>
-                <h1 id="name">Vinylly.</h1>
+                <h1 onClick={() => window.location.href='/'} id="name">Vinylly.</h1>
                 <a href="/">HOME</a>
                 <a href="shop">SHOP</a>
                 <a href="about">ABOUT</a>
                 <a href="checkout">CHECKOUT <span><div>{items}</div></span></a>
+                <div onClick={() => window.location.href='/checkout'} id='bag'>
+                    <img alt='' src={bag}></img>
+                    <div>{cart.length}</div>
+                </div>
             </header>
             <div id='latest'>
                 <h1>Popular Vinyls</h1>
@@ -45,8 +50,6 @@ function Shop({ cart}) {
                             <div key={song.id} className="vinyl">
                                 <img onMouseEnter={playSong} onMouseLeave={playSong} alt='' src={song.art}></img>
                                 <div></div>
-                                <div>
-                                </div>
                                 <h4>{song.album}</h4>
                                 <h3>{song.artist}</h3>
                                 <h5>${song.price}</h5>
@@ -57,7 +60,7 @@ function Shop({ cart}) {
                 </div>
             </div>
             <footer id='footer'>
-                <h3>VIANLLY DOES NOT OWN ANY COPYRIGHTS TO THE MUSIC FEATURED HERE</h3>
+                <h3>VINALLY DOES NOT OWN ANY COPYRIGHTS TO THE MUSIC FEATURED HERE</h3>
                 <h3>VINALLY © {curYear}</h3>
             </footer>
         </div>

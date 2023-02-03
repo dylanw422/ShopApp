@@ -12,7 +12,7 @@
 
 #checkoutArea {
     display: grid;
-    grid-template: 800px / 800px 600px;
+    grid-template: 70vh / 800px 600px;
     grid-gap: 50px;
 }
 
@@ -106,5 +106,69 @@
         transform: scale(1.05)
     }
 }
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+        #thisArea {
+            margin-top: 50px;
+        }
+
+        #checkoutArea {
+            grid-template: 300px 200px / 300px;
+            grid-gap: 25px
+        }
+
+        #cartWindow {
+            padding: 10px;
+        }
+
+        .cartItem {
+            grid-template: 50px / 40px 170px 50px;
+            padding: 10px;
+        }
+
+        .cartItem > img {
+            width: 50px;
+        }
+
+        .songInfo > h5 {
+            font-size: 10px;
+        }
+
+        .songInfo > h3 {
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 12px
+        }
+        
+
+        #subtotal {
+            font-size: 16px;
+        }
+
+        #taxes {
+            font-size: 16px;
+        }
+
+        #shipping {
+            font-size: 16px;
+            padding-bottom: 10px;
+        }
+
+        #total {
+            margin-top: 10px;
+            font-size: 25px;
+            text-align: left;
+        }
+
+        #checkoutBtnDiv {
+            margin-top: 20px
+        }
+    }
 
 

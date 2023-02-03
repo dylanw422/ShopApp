@@ -99,7 +99,7 @@ span > div {
 #atc {
     width: 100px;
     height: 30px;
-    position: absolute;
+    margin-top: 25px;
     bottom: 20px;
     border: 1px solid black;
     border-radius: 3px;
@@ -124,3 +124,78 @@ span > div {
     align-items: center;
     font-size: 12px;
 }
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        header > a {
+            display: none;
+        }
+
+        #body {
+            width: 350px;
+            height: 1400px;
+            display: flex;
+            margin-left: 20px
+        }
+
+        #collection {
+            grid-template: 250px 250px 250px 250px 250px / 100px 100px 100px;
+            grid-gap: 15px;
+        }
+
+        .vinyl {
+            width: 100px;
+        }
+
+        .vinyl > div {
+            left: -3px;
+            margin-bottom: 3px
+        }
+
+        .vinyl > img {
+            width: 100px;
+        }
+
+        .vinyl > img:hover + div {
+            animation: playPhone 15s linear forwards
+        }
+
+        @keyframes playPhone {
+            from {
+                width: 0px;
+            }
+            to {
+                width: 105px
+            }
+        }
+
+        .vinyl > h4 {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .vinyl > h3 {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .vinyl > h5 {
+            position: absolute;
+            bottom: 60px
+        }
+
+        #atc {
+            position: absolute;
+            bottom: 20px;
+            width: 80px;
+            height: 25px;
+            font-size: 10px;
+        }
+
+        #footer {
+            text-align: center;
+        }
+
+    }
